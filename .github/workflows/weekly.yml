@@ -3,43 +3,58 @@ name: Newsletter Semanal
 on:
   schedule:
     - cron: '0 9 * * 1'  # Lunes a las 9 AM UTC
-  workflow_dispatch:  # Permite ejecución manual
+  workflow_dispatch:     # Permite ejecución manual
+
+# 🔐 Permisos para hacer push al repositorio
+permissions:
+  contents: write
 
 jobs:
   generate-newsletter:
     runs-on: ubuntu-latest
+
     steps:
+      # 1. Descargar el código del repositorio
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # 2. Configurar Python
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
+      # 3. Instalar dependencias
       - name: Install dependencies
         run: |
+          # Actualizar pip
           python -m pip install --upgrade pip
+          
+          # Instalar torch, torchaudio, torchvision para CPU
           pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+          
+          # Instalar el resto del proyecto
           pip install -r requirements.txt
 
-      - name: Run main script (generate summary)
+      # 4. Ejecutar el script principal
+      - name: Run main script
         run: |
           python main.py
 
-      - name: Commit and push new summary file
+      # 5. Hacer commit y push del archivo generado
+      - name: Commit and push new summary
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           
-          # Añadir cualquier archivo nuevo o modificado en output
+          # Añadir todos los archivos .txt en output
           git add output/*.txt
 
-          # Hacer commit si hay cambios
+          # Verificar si hay cambios para commitear
           if git diff --cached --quiet; then
             echo "➡️  No hay cambios para commitear"
           else
             git commit -m "📝 Resumen semanal generado automáticamente"
             git push
-            echo "✅ Archivo de resumen subido a GitHub"
+            echo "✅ Archivo subido a GitHub"
           fi
