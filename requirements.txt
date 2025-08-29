@@ -1,4 +1,5 @@
 feedparser
-openai
+transformers
+torch
 beautifulsoup4
 requests
