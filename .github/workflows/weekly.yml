@@ -3,13 +3,14 @@ name: Newsletter Semanal
 on:
   schedule:
     - cron: '0 9 * * 1'  # Lunes a las 9 AM UTC
-  workflow_dispatch:
+  workflow_dispatch:  # Permite ejecución manual
 
 jobs:
-  send-newsletter:
+  generate-newsletter:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -19,10 +20,26 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements.txt
 
-      - name: Run main script
-        env:
-          EMAIL_USER: ${{ secrets.EMAIL_USER }}
-          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
-        run: python main.py
+      - name: Run main script (generate summary)
+        run: |
+          python main.py
+
+      - name: Commit and push new summary file
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          
+          # Añadir cualquier archivo nuevo o modificado en output
+          git add output/*.txt
+
+          # Hacer commit si hay cambios
+          if git diff --cached --quiet; then
+            echo "➡️  No hay cambios para commitear"
+          else
+            git commit -m "📝 Resumen semanal generado automáticamente"
+            git push
+            echo "✅ Archivo de resumen subido a GitHub"
+          fi
