@@ -45,36 +45,40 @@ def clean_text(text):
 
 def is_relevant(title, content=""):
     """
-    Determina si un artículo es relevante para IA en medicina u odontología
-    Requiere: (IA) + (medicina o odontología)
+    Determina si un artículo es relevante: IA + (medicina o odontología)
+    Más inclusivo, menos estricto
     """
     text = f"{title} {content}".lower()
-    
-    # Palabras clave de IA
-    has_ai = any(kw in text for kw in [
+
+    # Palabras clave de IA (más amplias)
+    ai_keywords = {
         'ia', 'inteligencia artificial', 'machine learning', 'deep learning',
         'neural network', 'red neuronal', 'algoritmo', 'llm', 'generative ai',
-        'ai', 'artificial intelligence', 'automated', 'predictivo', 'modelo'
-    ])
-    
-    # Palabras clave de medicina/salud
-    has_medical = any(kw in text for kw in [
+        'ai', 'artificial intelligence', 'automated', 'predictivo', 'modelo',
+        'intelligent system', 'decision support', 'automated diagnosis'
+    }
+
+    # Medicina y salud
+    medical_keywords = {
         'medicina', 'salud', 'clínico', 'diagnóstico', 'enfermedad',
-        'hospital', 'médico', 'doctor', 'enfermería', 'tratamiento',
-        'medical', 'healthcare', 'clinical', 'disease', 'radiología',
-        'oncología', 'neurología', 'patología'
-    ])
-    
-    # Palabras clave de odontología
-    has_dental = any(kw in text for kw in [
+        'hospital', 'médico', 'doctor', 'tratamiento', 'medical',
+        'healthcare', 'clinical', 'disease', 'radiología', 'oncología',
+        'neurología', 'patología', 'precision medicine', 'digital health'
+    }
+
+    # Odontología y dental
+    dental_keywords = {
         'odontología', 'dental', 'dentista', 'caries', 'implante',
         'ortodoncia', 'prótesis', 'periodontal', 'endodoncia',
-        'dental implant', 'tooth decay', 'prosthodontics', 'orthodontics'
-    ])
-    
-    # Es relevante si tiene IA + (medicina o odontología)
-    return has_ai and (has_medical or has_dental)
+        'dental implant', 'tooth decay', 'prosthodontics', 'orthodontics',
+        'oral health', 'dental imaging', 'dental AI', 'dentistry'
+    }
 
+    has_ai = any(kw in text for kw in ai_keywords)
+    has_medical = any(kw in text for kw in medical_keywords)
+    has_dental = any(kw in text for kw in dental_keywords)
+
+    return has_ai and (has_medical or has_dental)
 def is_blacklisted(url):
     """Verifica si el dominio está en la lista negra"""
     return any(domain in url.lower() for domain in BLACKLISTED_DOMAINS)
