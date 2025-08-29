@@ -1,11 +1,8 @@
 # config.py
 
-# 📧 Configuración de Gmail
-EMAIL_USER = "tuemail@gmail.com"
-EMAIL_APP_PASSWORD = "xxxxxxxxxxxx"  # Contraseña de aplicación (16 caracteres)
-
-# 📧 Destinatario
-EMAIL_TO = "cihoxip944@mogash.com"  # Puedes cambiarlo a tus suscriptores después
+EMAIL_USER = "irazus13@outlook.com"
+EMAIL_APP_PASSWORD = "abcd1234efgh5678"  # 16 caracteres, sin espacios
+EMAIL_TO = "tuemail@gmail.com"  # tu correo real para recibir el resumen
 
 # 🌐 Fuentes RSS sobre IA en medicina y odontología
 RSS_FEEDS = [
