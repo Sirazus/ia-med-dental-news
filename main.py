@@ -1,7 +1,6 @@
 # main.py
 from scraper import get_news
 from summarizer import summarize_articles
-from email_sender import send_email
 import os
 
 def main():
@@ -15,14 +14,22 @@ def main():
     print(f"✅ {len(articles)} artículos encontrados. Resumiendo...")
     summary = summarize_articles(articles)
     
-    # Guardar resumen para Notebook LM
+    # Crear carpeta output si no existe
     if not os.path.exists("output"):
         os.makedirs("output")
-    with open("output/podcast_script.txt", "w", encoding="utf-8") as f:
+    
+    # Guardar resumen en un archivo con fecha
+    from datetime import datetime
+    date_str = datetime.now().strftime("%Y-%m-%d")
+    filename = f"output/resumen-semanal-{date_str}.txt"
+    
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(f"📅 Resumen semanal: IA en Medicina y Odontología\n")
+        f.write(f"📆 Fecha: {date_str}\n\n")
+        f.write(f"📰 Noticias destacadas:\n\n")
         f.write(summary)
     
-    print("📧 Enviando email con el resumen...")
-    send_email(summary)
+    print(f"✅ Resumen guardado en {filename}")
 
 if __name__ == "__main__":
     main()
