@@ -44,9 +44,36 @@ def clean_text(text):
     return text.strip()
 
 def is_relevant(title, content=""):
-    """Verifica si el artículo es relevante usando palabras clave"""
+    """
+    Determina si un artículo es relevante para IA en medicina u odontología
+    Requiere: (IA) + (medicina o odontología)
+    """
     text = f"{title} {content}".lower()
-    return any(keyword in text for keyword in KEYWORDS)
+    
+    # Palabras clave de IA
+    has_ai = any(kw in text for kw in [
+        'ia', 'inteligencia artificial', 'machine learning', 'deep learning',
+        'neural network', 'red neuronal', 'algoritmo', 'llm', 'generative ai',
+        'ai', 'artificial intelligence', 'automated', 'predictivo', 'modelo'
+    ])
+    
+    # Palabras clave de medicina/salud
+    has_medical = any(kw in text for kw in [
+        'medicina', 'salud', 'clínico', 'diagnóstico', 'enfermedad',
+        'hospital', 'médico', 'doctor', 'enfermería', 'tratamiento',
+        'medical', 'healthcare', 'clinical', 'disease', 'radiología',
+        'oncología', 'neurología', 'patología'
+    ])
+    
+    # Palabras clave de odontología
+    has_dental = any(kw in text for kw in [
+        'odontología', 'dental', 'dentista', 'caries', 'implante',
+        'ortodoncia', 'prótesis', 'periodontal', 'endodoncia',
+        'dental implant', 'tooth decay', 'prosthodontics', 'orthodontics'
+    ])
+    
+    # Es relevante si tiene IA + (medicina o odontología)
+    return has_ai and (has_medical or has_dental)
 
 def is_blacklisted(url):
     """Verifica si el dominio está en la lista negra"""
