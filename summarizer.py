@@ -1,31 +1,30 @@
 # summarizer.py
-# Resumen gratuito con modelo Hugging Face (sin costo)
-
 from transformers import pipeline
 import re
 
-# Usamos un modelo ligero especializado en resúmenes
+# Inicializa el modelo
 summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
 
 def clean_text(text):
     return re.sub(r'\s+', ' ', text).strip()
 
 def summarize_articles(articles):
-    full_text = ""
+    summaries = []
     for article in articles:
         title = article['title']
-        summary = article['summary']
-        full_text += f"{title}. {summary} "
+        content = article['content']  # ✅ Ahora usa 'content', no 'summary'
 
-    full_text = clean_text(full_text)
+        # Limpieza
+        full_text = clean_text(content)
+        if len(full_text) > 1024:
+            full_text = full_text[:1024]
+
+        try:
+            result = summarizer(full_text, max_length=120, min_length=60, do_sample=False)
+            summary = result[0]['summary_text']
+            summaries.append(f"🔹 {title}\n   {summary}\n")
+        except Exception as e:
+            print(f"❌ Error resumiendo {title}: {str(e)}")
+            summaries.append(f"🔹 {title}\n   No se pudo resumir.\n")
     
-    # BART funciona mejor con textos de 500-1024 tokens
-    if len(full_text) > 1024:
-        full_text = full_text[:1024]
-
-    try:
-        result = summarizer(full_text, max_length=150, min_length=60, do_sample=False)
-        return result[0]['summary_text']
-    except Exception as e:
-        print("Error en resumen:", str(e))
-        return "No se pudo generar el resumen automáticamente."
+    return "\n".join(summaries)
