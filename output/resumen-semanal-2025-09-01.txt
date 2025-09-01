@@ -1,0 +1,22 @@
+📅 Resumen Semanal: IA en Medicina y Odontología
+📆 Fecha: 2025-09-01
+🔗 Fuente: Google News, PubMed
+
+📰 Noticias destacadas:
+
+1. Addressing accuracy and hallucination of LLMs in Alzheimer's disease research through knowledge graphs
+   🔗 https://arxiv.org/abs/2508.21238
+
+2. Alan Stern, DDS, Named Speaker of the Year at The Dental Festival’s 2025 Dental Socials
+   🔗 https://www.dentistrytoday.com/alan-stern-dds-named-speaker-of-the-year-at-the-dental-festivals-2025-dental-socials/
+
+📝 Resumen:
+
+🔹 Addressing accuracy and hallucination of LLMs in Alzheimer's disease research through knowledge graphs
+   CNN.com will feature iReporter photos in a weekly Travel Snapshots gallery. Please submit your best shots of the U.S. for next week. Visit CNN.com/Travel next Wednesday for a new gallery of snapshots. Please share your best photos of the United States with CNN iReporters.  Click here for a gallery of photos.
+
+🔹 Alan Stern, DDS, Named Speaker of the Year at The Dental Festival’s 2025 Dental Socials
+   Dr. Alan Stern, DDS, has been honored as Speaker of the Year at The Dental Socials. Dr. Stern was one of five distinguished finalists in the speaker of the year category. Known for his engaging presentations and focus on wellness, resilience, and leadership in dentistry. “I am deeply honored to receive this r
+
+
+🎙️ Próximo paso: Copia este texto y pásalo a Notebook LM para generar el podcast.
