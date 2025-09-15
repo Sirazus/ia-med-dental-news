@@ -1,0 +1,16 @@
+📅 Resumen Semanal: IA en Medicina y Odontología
+📆 Fecha: 2025-09-15
+🔗 Fuente: Google News, PubMed
+
+📰 Noticias destacadas:
+
+1. AI-Powered Overhaul: LightSpun Transforms Dental Insurance
+   🔗 https://www.dentistrytoday.com/ai-powered-overhaul-lightspun-transforms-dental-insurance/
+
+📝 Resumen:
+
+🔹 AI-Powered Overhaul: LightSpun Transforms Dental Insurance
+   LightSpun is an AI-native platform built to modernize and automate the complex, manual workflows that plague dental insurance administration. Fresh off a $13 million Series A round led by Brewer Lane Ventures, the startup is now powering over 50% of dental providers nationwide. To understand how this startup is reimagining the infrastructure of dental insurance, we spoke with co-founders Shaju Puthussery and Deepak Ramaswamy.
+
+
+🎙️ Próximo paso: Copia este texto y pásalo a Notebook LM para generar el podcast.
