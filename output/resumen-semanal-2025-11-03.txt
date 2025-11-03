@@ -1,0 +1,22 @@
+📅 Resumen Semanal: IA en Medicina y Odontología
+📆 Fecha: 2025-11-03
+🔗 Fuente: Google News, PubMed
+
+📰 Noticias destacadas:
+
+1. Archy Raises $20 Million to Automate Dentistry
+   🔗 https://www.dentistrytoday.com/archy-raises-20-million-to-automate-dentistry/
+
+2. DEXIS Partners with Circle One to Advance Chairside Dentistry
+   🔗 https://www.dentistrytoday.com/dexis-partners-with-circle-one-to-advance-chairside-dentistry/
+
+📝 Resumen:
+
+🔹 Archy Raises $20 Million to Automate Dentistry
+   Dental practices still run on old, disconnected systems prone to outages and hacks. Staffing is thin and turnover is high, so teams are constantly retraining new hires. Archy’s AI platform replaces five or more different software tools with a single cloud-based system. The company plans to use the capital to hire across engineering, AI, and go-to-market.
+
+🔹 DEXIS Partners with Circle One to Advance Chairside Dentistry
+   DEXIS announces partnership with Circle One, a France-based leader in effortless and advanced chairside solutions. Seamlessly integrated with DEXIS intraoral scanners through a dedicated API, Circle One takes practitioners from scan to export in just a few clicks. In under a minute, the cloud-based AI generates a functional design ready to validate or adjust, without installation or extra equipment.
+
+
+🎙️ Próximo paso: Copia este texto y pásalo a Notebook LM para generar el podcast.
