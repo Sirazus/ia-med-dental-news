@@ -1,0 +1,28 @@
+📅 Resumen Semanal: IA en Medicina y Odontología
+📆 Fecha: 2025-12-01
+🔗 Fuente: Google News, PubMed
+
+📰 Noticias destacadas:
+
+1. Evaluating Strategies for Synthesizing Clinical Notes for Medical Multimodal AI
+   🔗 https://arxiv.org/abs/2511.21827
+
+2. Personify Group Joins Dental Trade Alliance
+   🔗 https://www.dentistrytoday.com/personify-group-joins-dental-trade-alliance/
+
+3. Penn Foster Recognized for Dental Training Excellence
+   🔗 https://www.dentistrytoday.com/penn-foster-recognized-for-dental-training-excellence/
+
+📝 Resumen:
+
+🔹 Evaluating Strategies for Synthesizing Clinical Notes for Medical Multimodal AI
+   CNN.com will feature iReporter photos in a weekly Travel Snapshots gallery. Please submit your best shots of the U.S. for next week. Visit CNN.com/Travel next Wednesday for a new gallery of snapshots. Please share your best photos of the United States with CNN iReporters.  Click here for a gallery of photos.
+
+🔹 Personify Group Joins Dental Trade Alliance
+   No se pudo extraer el contenido. Revisa el enlace. No se pudiera extraer la contenidos. No pudoExtraer el texto. No  pudo Extraer el CONTENIDO. Nosotros también no puede extraer un contenio.
+
+🔹 Penn Foster Recognized for Dental Training Excellence
+   No se pudo extraer el contenido. Revisa el enlace. No se pudiera extraer la contenidos. No pudoExtraer el texto. No  pudo Extraer el CONTENIDO. Nosotros también no puede extraer un contenio.
+
+
+🎙️ Próximo paso: Copia este texto y pásalo a Notebook LM para generar el podcast.
