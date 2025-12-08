@@ -1,0 +1,16 @@
+📅 Resumen Semanal: IA en Medicina y Odontología
+📆 Fecha: 2025-12-08
+🔗 Fuente: Google News, PubMed
+
+📰 Noticias destacadas:
+
+1. MCP-AI: Protocol-Driven Intelligence Framework for Autonomous Reasoning in Healthcare
+   🔗 https://arxiv.org/abs/2512.05365
+
+📝 Resumen:
+
+🔹 MCP-AI: Protocol-Driven Intelligence Framework for Autonomous Reasoning in Healthcare
+   CNN.com will feature iReporter photos in a weekly Travel Snapshots gallery. Please submit your best shots of the U.S. for next week. Visit CNN.com/Travel next Wednesday for a new gallery of snapshots. Please share your best photos of the United States with CNN iReporters.  Click here for a gallery of photos.
+
+
+🎙️ Próximo paso: Copia este texto y pásalo a Notebook LM para generar el podcast.
