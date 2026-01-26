@@ -1,0 +1,34 @@
+📅 Resumen Semanal: IA en Medicina y Odontología
+📆 Fecha: 2026-01-26
+🔗 Fuente: Google News, PubMed
+
+📰 Noticias destacadas:
+
+1. LLM is Not All You Need: A Systematic Evaluation of ML vs. Foundation Models for text and image based Medical Classification
+   🔗 https://arxiv.org/abs/2601.16549
+
+2. AgentsEval: Clinically Faithful Evaluation of Medical Imaging Reports via Multi-Agent Reasoning
+   🔗 https://arxiv.org/abs/2601.16685
+
+3. FUGO 3D Introduces Automated Dental Printing Solution
+   🔗 https://www.dentistrytoday.com/fugo-3d-introduces-automated-dental-printing-solution/
+
+4. US Children to Gain New Access to Dental Care with Dentistry.One and America’s ToothFairy Partnership
+   🔗 https://www.dentistrytoday.com/us-children-to-gain-new-access-to-dental-care-with-dentistry-one-and-americas-toothfairy-partnership/
+
+📝 Resumen:
+
+🔹 LLM is Not All You Need: A Systematic Evaluation of ML vs. Foundation Models for text and image based Medical Classification
+   CNN.com will feature iReporter photos in a weekly Travel Snapshots gallery. Please submit your best shots of the U.S. for next week. Visit CNN.com/Travel next Wednesday for a new gallery of snapshots. Please share your best photos of the United States with CNN iReporters.  Click here for a gallery of photos.
+
+🔹 AgentsEval: Clinically Faithful Evaluation of Medical Imaging Reports via Multi-Agent Reasoning
+   CNN.com will feature iReporter photos in a weekly Travel Snapshots gallery. Please submit your best shots of the U.S. for next week. Visit CNN.com/Travel next Wednesday for a new gallery of snapshots. Please share your best photos of the United States with CNN iReporters.  Click here for a gallery of photos.
+
+🔹 FUGO 3D Introduces Automated Dental Printing Solution
+   No se pudo extraer el contenido. Revisa el enlace. No se pudiera extraer la contenidos. No pudoExtraer el texto. No  pudo Extraer el CONTENIDO. Nosotros también no puede extraer un contenio.
+
+🔹 US Children to Gain New Access to Dental Care with Dentistry.One and America’s ToothFairy Partnership
+   No se pudo extraer el contenido. Revisa el enlace. No se pudiera extraer la contenidos. No pudoExtraer el texto. No  pudo Extraer el CONTENIDO. Nosotros también no puede extraer un contenio.
+
+
+🎙️ Próximo paso: Copia este texto y pásalo a Notebook LM para generar el podcast.
